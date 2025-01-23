@@ -1,0 +1,75 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(20, 0, 20);
+  color: white;
+}
+.container {
+  width: 70%;
+  margin: 20px auto;
+}
+
+.container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.inputabtn {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.container input {
+  width: 50%;
+  padding: 10px 20px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: rgb(175, 0, 175);
+  color: white;
+  border: none;
+}
+.container input:focus {
+  outline: none;
+}
+.container input::placeholder {
+  color: rgb(223, 223, 223);
+}
+.inputabtn button {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 0 20px;
+  cursor: pointer;
+  background-color: purple;
+  color: white;
+  border: none;
+  transition: background-color 0.5s;
+}
+.inputabtn button:hover {
+  background-color: rgb(157, 0, 157);
+}
+.list-cont {
+  display: flex;
+  flex-wrap: wrap;
+}
+.list-cont li {
+  list-style: none;
+  background-color: rgba(107, 0, 107, 0.745);
+  margin: 5px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.list-cont li:hover {
+  background-color: rgb(107, 0, 107);
+}
+
+@media (max-width: 767px) {
+  .container {
+    width: 90%;
+  }
+  .container input {
+    width: 100%;
+  }
+}
